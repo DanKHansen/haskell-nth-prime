@@ -1,7 +1,7 @@
 module Prime (nth) where
 
 primes :: [Int]
-primes = 2 : filter isPrime [3, 5 ..]
+primes = 2 : filter isPrime [3 ..]
 
 isPrime :: Int -> Bool
 isPrime x = all (\p -> mod x p /= 0) (takeWhile (\p -> p * p <= x) primes)
