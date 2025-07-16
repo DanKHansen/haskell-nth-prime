@@ -1,7 +1,7 @@
 module Prime (nth) where
 
 primes :: [Int]
-primes = 2 : filter isPrime [3, 5 ..]
+primes = 2 : filter isPrime [2, 3 ..]
 
 nth :: Int -> Maybe Integer
 nth n
